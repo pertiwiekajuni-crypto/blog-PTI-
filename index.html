@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog pembelajaran Gerbang Logika dan Aljabar Boolean untuk mahasiswa.">
+  <title>LogicLab | Belajar Gerbang Logika</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#beranda" class="logo">Logic<span>Lab.</span></a>
+    <nav>
+      <a href="#pengertian">Pengertian</a>
+      <a href="#jenis">Jenis Gerbang</a>
+      <a href="#tabel">Tabel Kebenaran</a>
+      <a href="#contoh">Contoh Soal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-content">
+        <p class="tag">MATEMATIKA DISKRIT · DIGITAL LOGIC</p>
+        <h1>Kenali Logika.<br><span>Pahami Teknologi.</span></h1>
+        <p>
+          Belajar gerbang logika dan aljabar Boolean melalui materi,
+          tabel kebenaran, contoh soal, serta simulasi interaktif.
+        </p>
+
+        <!-- IDENTITAS MAHASISWA ANIMASI BIRU -->
+<div class="identity-banner">
+  <div class="identity-glow"></div>
+
+  <p class="identity-heading">WELCOME TO MY PROJECT</p>
+
+  <h2 class="identity-name">
+    <span>EKA JUNI PERTIWI</span>
+  </h2>
+
+  <div class="identity-line"></div>
+
+  <div class="identity-info">
+    <p><span>NIM</span> 0702262073</p>
+    <p><span>PRODI</span> Sistem Informasi</p>
+    <p><span>MATA KULIAH</span> Pengantar Teknologi Informasi</p>
+  </div>
+
+  <p class="identity-caption">LOGICLAB · DIGITAL LOGIC LEARNING</p>
+</div>
+        <a class="btn" href="#pengertian">Mulai Belajar →</a>
+      </div>
+      <div class="hero-symbol" aria-label="Ilustrasi logika digital">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="core">LOGIC<br>101</div>
+        <span class="bit bit-one">1</span>
+        <span class="bit bit-two">0</span>
+        <span class="bit bit-three">1</span>
+      </div>
+    </section>
+
+    <section class="section" id="pengertian">
+      <p class="tag">01 — DASAR TEORI</p>
+      <h2>Memahami Dasar Logika</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="symbol">01</div>
+          <h3>Apa Itu Gerbang Logika?</h3>
+          <p>
+            Gerbang logika adalah rangkaian digital yang mengolah satu
+            atau beberapa masukan menjadi keluaran berdasarkan aturan
+            logika tertentu. Nilai digital umumnya dinyatakan sebagai
+            0 (LOW) dan 1 (HIGH).
+          </p>
+        </article>
+        <article class="card">
+          <div class="symbol">02</div>
+          <h3>Apa Itu Matematika Boolean?</h3>
+          <p>
+            Aljabar Boolean adalah sistem matematika yang menggunakan
+            dua nilai, yaitu 0 dan 1, serta operasi seperti AND, OR,
+            dan NOT. Aljabar Boolean digunakan untuk menganalisis dan
+            menyederhanakan rangkaian logika digital.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="jenis">
+      <p class="tag">02 — JENIS DAN SIMBOL</p>
+      <h2>7 Gerbang Logika Utama</h2>
+      <p class="section-intro">
+        Pilih gerbang untuk mempelajari simbol operasi, cara kerja,
+        dan hasil keluarannya.
+      </p>
+
+      <div class="gate-grid">
+        <article class="gate-card">
+          <div class="gate-icon">A · B</div>
+          <h3>AND</h3>
+          <p class="formula">Y = A · B</p>
+          <p>Output 1 hanya jika semua input bernilai 1.</p>
+        </article>
+        <article class="gate-card">
+          <div class="gate-icon">A + B</div>
+          <h3>OR</h3>
+          <p class="formula">Y = A + B</p>
+          <p>Output 1 jika setidaknya satu input bernilai 1.</p>
+        </article>
+        <article class="gate-card">
+          <div class="gate-icon">¬A</div>
+          <h3>NOT</h3>
+          <p class="formula">Y = ¬A</p>
+          <p>Membalik nilai input: 0 menjadi 1, atau 1 menjadi 0.</p>
+        </article>
+        <article class="gate-card">
+          <div class="gate-icon">¬(A · B)</div>
+          <h3>NAND</h3>
+          <p class="formula">Y = ¬(A · B)</p>
+          <p>Kebalikan dari AND; output 0 hanya saat semua input 1.</p>
+        </article>
+        <article class="gate-card">
+          <div class="gate-icon">¬(A + B)</div>
+          <h3>NOR</h3>
+          <p class="formula">Y = ¬(A + B)</p>
+          <p>Kebalikan dari OR; output 1 hanya saat semua input 0.</p>
+        </article>
+        <article class="gate-card">
+          <div class="gate-icon">A ⊕ B</div>
+          <h3>XOR</h3>
+          <p class="formula">Y = A ⊕ B</p>
+          <p>Output 1 jika kedua input berbeda.</p>
+        </article>
+        <article class="gate-card">
+          <div class="gate-icon">¬(A ⊕ B)</div>
+          <h3>XNOR</h3>
+          <p class="formula">Y = ¬(A ⊕ B)</p>
+          <p>Output 1 jika kedua input sama.</p>
+        </article>
+      </div>
+      <p class="note">
+        Catatan: notasi di atas adalah simbol operasi Boolean,
+        bukan gambar bentuk fisik gerbang dalam diagram rangkaian.
+      </p>
+    </section>
+
+    <section class="section" id="tabel">
+      <p class="tag">03 — TABEL KEBENARAN</p>
+      <h2>Hasil Setiap Kombinasi Input</h2>
+      <p class="section-intro">
+        Tabel kebenaran memperlihatkan keluaran untuk setiap kombinasi
+        masukan yang mungkin.
+      </p>
+
+      <div class="table-controls">
+        <label for="gateSelect">Pilih gerbang:</label>
+        <select id="gateSelect">
+          <option value="AND">AND</option>
+          <option value="OR">OR</option>
+          <option value="NOT">NOT</option>
+          <option value="NAND">NAND</option>
+          <option value="NOR">NOR</option>
+          <option value="XOR">XOR</option>
+          <option value="XNOR">XNOR</option>
+        </select>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead id="truthHead"></thead>
+          <tbody id="truthBody"></tbody>
+        </table>
+      </div>
+
+      <div class="card-grid two">
+        <article class="card">
+          <h3>Keuntungan</h3>
+          <ul>
+            <li>Menampilkan seluruh kombinasi input secara sistematis.</li>
+            <li>Memudahkan pemeriksaan hasil keluaran.</li>
+            <li>Membantu menguji dan merancang rangkaian logika.</li>
+            <li>Memudahkan perbandingan antaroperasi Boolean.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Keterbatasan</h3>
+          <ul>
+            <li>Jumlah baris bertambah cepat saat input bertambah.</li>
+            <li>Untuk n input, terdapat 2ⁿ kombinasi.</li>
+            <li>Tabel besar dapat memerlukan waktu untuk diperiksa.</li>
+            <li>Tidak langsung memperlihatkan bentuk fisik rangkaian.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="simulator">
+      <p class="tag">04 — COBA SENDIRI</p>
+      <h2>Simulasi Gerbang Logika</h2>
+      <p class="section-intro">
+        Ubah nilai input dan amati bagaimana hasilnya berubah.
+      </p>
+      <div class="simulator card">
+        <div class="sim-input">
+          <label for="inputA">Input A</label>
+          <select id="inputA">
+            <option value="0">0 (LOW)</option>
+            <option value="1">1 (HIGH)</option>
+          </select>
+        </div>
+        <div class="sim-input">
+          <label for="inputB">Input B</label>
+          <select id="inputB">
+            <option value="0">0 (LOW)</option>
+            <option value="1">1 (HIGH)</option>
+          </select>
+        </div>
+        <div class="sim-input">
+          <label for="simGate">Gerbang</label>
+          <select id="simGate">
+            <option>AND</option>
+            <option>OR</option>
+            <option>NOT</option>
+            <option>NAND</option>
+            <option>NOR</option>
+            <option>XOR</option>
+            <option>XNOR</option>
+          </select>
+        </div>
+        <button class="btn" id="calculateBtn">Hitung Output</button>
+        <div class="output-box">
+          <span>HASIL OUTPUT (Y)</span>
+          <strong id="outputValue">0</strong>
+          <p id="outputExplanation">Pilih input untuk memulai simulasi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contoh">
+      
+<!-- VIDEO PEMBELAJARAN -->
+<section class="section video-section" id="video">
+  <p class="tag">VIDEO PEMBELAJARAN</p>
+  <h2>Belajar Gerbang Logika Lewat Video</h2>
+  <p>
+    Tonton video berikut untuk memahami konsep gerbang
+    logika dan tabel kebenaran dengan lebih mudah.
+  </p>
+
+ <div class="video-container">
+ <iframe
+  src="https://www.youtube.com/embed/NAcCtVbsLJI"
+  title="Video Pembelajaran Gerbang Logika"
+  allowfullscreen>
+</iframe>
+</div>
+
+  <p class="video-note">
+    Video pembelajaran untuk materi Gerbang Logika.
+  </p>
+</section>
+
+      <p class="tag">05 — CONTOH PENERAPAN</p>
+      <h2>Contoh Soal dan Pembahasan</h2>
+      <article class="example card">
+        <h3>Contoh 1: Operasi AND</h3>
+        <p>
+          Diketahui A = 1 dan B = 1. Tentukan keluaran gerbang AND
+          dengan rumus Y = A · B.
+        </p>
+        <div class="solution">
+          <p><strong>Langkah 1:</strong> Masukkan nilai A dan B.</p>
+          <p>Y = 1 · 1</p>
+          <p><strong>Langkah 2:</strong> Operasi AND menghasilkan 1 hanya jika kedua input bernilai 1.</p>
+          <p><strong>Jawaban:</strong> Y = 1.</p>
+        </div>
+      </article>
+      <article class="example card">
+        <h3>Contoh 2: Operasi OR</h3>
+        <p>
+          Diketahui A = 0 dan B = 1. Tentukan Y = A + B.
+        </p>
+        <div class="solution">
+          <p>Y = 0 + 1</p>
+          <p>Karena salah satu input bernilai 1, keluaran OR adalah 1.</p>
+          <p><strong>Jawaban:</strong> Y = 1.</p>
+        </div>
+      </article>
+      <article class="example card">
+        <h3>Contoh 3: Operasi NOT</h3>
+        <p>Diketahui A = 1. Tentukan Y = ¬A.</p>
+        <div class="solution">
+          <p>Y = ¬1</p>
+          <p>NOT membalik nilai input 1 menjadi 0.</p>
+          <p><strong>Jawaban:</strong> Y = 0.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section quiz-section">
+      <p class="tag">UJI PEMAHAMAN</p>
+      <h2>Kuis Singkat</h2>
+      <div class="card quiz-card">
+        <p id="quizQuestion">Jika A = 1 dan B = 0, berapakah output AND?</p>
+        <div id="quizOptions" class="quiz-options">
+          <button class="quiz-option" data-answer="0">0</button>
+          <button class="quiz-option" data-answer="1">1</button>
+        </div>
+        <p id="quizFeedback" aria-live="polite"></p>
+        <button id="nextQuestion" class="btn" hidden>Soal Berikutnya →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#beranda" class="logo">Logic<span>Lab.</span></a>
+    <p>Belajar logika hari ini, memahami teknologi esok hari.</p>
+    <p class="copyright">Blog edukasi Gerbang Logika · Matematika Diskrit</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
